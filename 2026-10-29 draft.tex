@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+
+\usepackage{silence}
+\WarningFilter{biblatex}{Patching footnotes failed}
+\usepackage[
+style=authoryear,
+natbib
+]{biblatex}
+\addbibresource{bibliography.bib}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{gb4e}
+
+\newcommand{\ok}{\checkmark}
+
+
+\title{Senior Thesis Proposal}
+\author{Benjamin Kyle Olson}
+\date{2026-10-29}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+The subject of the project is, in short, to answer the question ``What is going on with relative clauses out of \textit{there}-insertion contexts (TCs)?'' Specifically, out of the standard \textit{be}-type contexts (see fn.~\ref{fn:external-TRCs}). These have historically been analyzed primarily as relativizing degrees due to seeming definiteness restrictions against individual variables (\cite{heimWhereDoesDefiniteness1987}) and to patterning with true amount relatives with respect to especially determiner restrictions.\footnote{\label{fn:restrictions}As \citet{grosuAmountRelatives2017} point out, the literature seems to have come down to three diagnostics of \citet{carlsonAmountRelatives1977}'s amount relatives: only \textit{that} and \(\varnothing\) relativizers, never \textit{wh}-forms; restriction to definite and universal determiners, never indefinites; and restriction against stacking---only one amount relative, never more. Based on previous study (\cite{kayThatVsWhich}) as well as unreliable judgements both in the literature (cf. \cite{heimWhereDoesDefiniteness1987}) and from myself, I choose to ignore the relativizer restrictions. Further, I think the stacking facts are more complex than given at face value: especially my own judgements are not particularly clear, I think I have some data that might suggest stacking is permitted in certain environments, and stacking across varieties of amount relatives has not been explored. I will likely make some comment on the issue but would like to refrain from taking a stance one way or another.}
+
+I understand at least five\footnote{This is not even counting appositives and free relatives; see too fn.~\ref{fn:external-TRCs} on subtyping TRCs} species of relative clause (in English, immediately relevant to the discourse) as given in (\ref{ex:typology}) and am \textit{a priori} agnostic to which may be successfully grouped and treated together. As stated, the project focuses on (\textit{be}-type) TRCs.
+
+\begin{exe}
+	\ex {\begin{xlist}
+			\ex {\textbf{\textit{There}-Insertion Relative Clause (TRC)}:\\(\cite{carlsonAmountRelatives1977}, ex. 6b; syntactic relativization out of TCs)\\
+				Every man there was on the life-raft died.}
+			\ex {\textbf{(True) Quantity (Amount) Relative Clause (QRC):}\\(\cite{heimWhereDoesDefiniteness1987}, ex. 40; requires only identity-of-amount)\\
+				It will take us the rest of our lives to drink the champagne that they spilled that evening.}
+			\ex {\textbf{Restrictive Relative Clause (RRC):}\\(\cite{carlsonAmountRelatives1977}, ex. 3b; intersective semantics)\\
+				Any lion that eats small animals is cowardly.}
+			\ex {\textbf{\textit{Amount}-headed Relative Clause:}\\(\cite{grosuAmountRelatives2017}, ex. 1c)\\
+				The amount of money this car cost could have fed 1,000 hungry children for a whole year.}
+			\ex {\textbf{\textit{ep}-Relative Clause:}\footnote{\citet{grosuAmountRelatives2017} mostly consider TRCs to wholly describe the distribution of \textit{ep}-relatives. Their exact characterization is not entirely clear to me, though I do recognize that they may be distrinct from RRCs \textit{qua}, e.g., Carlson's diagonistics.}\\(\cite{grosuAmountRelatives2017}, ex. 10e)\\
+				Last year, all the days that Fred was in Paris, Susan was in Rome.}
+		\end{xlist}}\label{ex:typology}
+\end{exe}
+
+\section{History}
+To my knowledge, the primary history of the data stems from \citet{carlsonAmountRelatives1977} who presented Amount Relatives as a class of relative clause distinct from ordinary restrictive relative clauses grouping \textit{There} Relative Clauses (hereafter TRCs) with a number of other constructions, especially true amount relatives.
+\citet{heimWhereDoesDefiniteness1987}, in an exploration of the well-known definiteness effect (DE) of TCs, (i) does great work in parsing out the semantics of \citet{carlsonAmountRelatives1977}, (ii) adds to the discourse sentences ``where only identity of amounts, not identity of substances, is required for their truth''---true amount relatives---(iii) argues that the gap of TRCs cannot be an individual variable since these are strong and in violation of the DE, and thus (iv) the gap is something like \textit{x-many Ns} which is weak analogous with ``that many Ns'' which are not subject to the DE. Explicitly building off Carlson and Heim, \citet{grosuStrangeRelativesThird1998} provide a substantial syntax-semantics of the data which accounts for the determiner restriction along with stacking facts.
+\citet{mcnallyDPInternalOnlyAmount2008} (i) provides excellent summary of the preceeding literature, (ii) is the first to my knowledge to present a schism between TRCs and true amount relatives on the basis of DP-internal \textit{only} blocking amount readings.
+\citet{grosuAmountRelatives2017} return to the issue and present an excellent typology of the data---\textit{e/d}-headed, \textit{e/d}-interpretted, and \textit{a/p}-gapped\footnote{\label{fn:external-TRCs}While I think this picture is mostly accurate, \citet{grosuAmountRelatives2017} assume TRCs wholly describe the class \textit{ep}-relatives. I choose to extract TRCs out of these out of an abundance of caution. Do note that relatives out of ECs in the sense of \citet{milsarkExistentialSentencesEnglish1974} themselves do not seem to be a homogenous class, informants agree that TRCs out of external-verbal TCs are especially bad. I will focus primarily on the standard \textit{be}-type TCs.
+	\begin{exe}
+		\ex[*] {I want to pet the fierce tomcat that there walked into the room.}
+	\end{exe}}---and bring to light a number of interesting exceptions to the restrictions.
+\citet{mendiaAmountRelativesRedux} provides an account of true amount relatives, divorced from TRCs, as relativizing kinds.
+
+It should be noted that \citeauthor{grosuStrangeRelativesThird1998} (\citedate{grosuStrangeRelativesThird1998}, \citedate{grosuAmountRelatives2017})'s argument is largely of the following form: (i) degrees need to be maximalized (\cite{rullmannMaximalitySemanticsOfwhconstructions1995}), (ii) maximalization gives the determiner and stacking facts (see fn.~\ref{fn:restrictions}), (iii) the gap cannot be an individual variable (\cite{heimWhereDoesDefiniteness1987}), so (iv) relativize individual-degree pairs \(\langle e,d\rangle\). Importantly, degrees aren't actually \textit{doing} anything---TRCs are not (generally) interpretted with an amount reading\footnote{I do not deny that TRCs \textit{may} have an amount reading in the same mannar as other true amount relatives are generally ambiguous between individual and amount readings:
+	\begin{exe}
+		\ex {There isn't the water in the sink that there is in the bathtub. \\
+			(Lisa Selkirk, p.c. to Irene Heim; so cited in \citet{vonfintelAmountRelativesMeaning1999}, original unknown)}
+	\end{exe}}---they merely excuse the gap from Heim's claims that individual variables are strong and provide an excuse to maximalize; in fact, \S4.3 of \citet{grosuAmountRelatives2017} notes issues with this pair approach in contexts of negation.
+
+\section{Analysis}
+The project follows the typical methodology of syntax and semantics of diagnosing and analyzing the acceptability of sentences and sentence fragments as confirmed by informants (incl. the author). As stated, it explicitly looks for a non-degree-based analysis of TRCs with special focus on explaining determiner restrictions (\ref{ex:det}) and novel data on (missing) superlative readings (\ref{ex:rel-sup}).
+
+\begin{exe}
+	\ex {(adapted from \cite{carlsonAmountRelatives1977}, ex. 10a and 11b)
+		\begin{xlist}
+			\ex[] {The people there were at that time only lived a few decades.}
+			\ex[*] {A man there was disagreed.}
+		\end{xlist}}\label{ex:det}
+	\ex{I want to pet the cat that there is in the biggest hat.\\(\ok absolute, * relative)}\label{ex:rel-sup}
+\end{exe}
+
+I predict that there is a sound analysis of TRCs which does not appeal to degrees.
+
+\printbibliography
+\end{document}

@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+
+\usepackage{silence}
+\WarningFilter{biblatex}{Patching footnotes failed}
+\usepackage[
+style=authoryear,
+natbib
+]{biblatex}
+\addbibresource{bibliography.bib}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbold}
+
+\usepackage{gb4e}
+
+\newcommand{\ok}{\checkmark}
+\DeclareMathOperator{\bbexists}{\exists\mskip-7mu\exists}
+
+
+\title{Senior Thesis Proposal}
+\author{Benjamin Kyle Olson}
+\date{2026-11-01}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+This project is to explain relative clauses out of expletive \textit{there} contexts (TRCs) such as (\ref{ex:trc}). These are known to exhibit determiner selection (\ref{ex:det}): broadly, definites and universals are acceptable; indefinites are unacceptable. This is particularly striking against the well-known (anti)definiteness effect (DE) of expletive \textit{there} contexts (TCs) seen in (\ref{ex:def}).
+
+\begin{exe}
+	\ex {The cat that there was in the room jumped out the window.}\label{ex:trc}\footnote{TRCs seem to be almost universally partially marked and informants consistently say that they would prefer the plain relative clauses without expletive \textit{there}. I think this partially has to do with the generally presentationality of TCs (e.g. \cite{zucchiIngredientsDefinitenessDefiniteness1995}). Part of the research phase of this project will include trying to find less marked examples, ideally even contexts where the TRC is required/better than the plain relative.}
+	\ex {\textbf{Determiner Selection:} (\cite{carlsonAmountRelatives1977}, ex. 10a, 10e, 11b)
+		\begin{xlist}
+			\ex[]  {The people there were at that time only lived a few decades.}
+			\ex[]  {Every lion there is eats meat.}
+			\ex[*] {A man there was disagreed.}
+		\end{xlist}}\label{ex:det}
+	\ex {\textbf{Definiteness Effect:} (\cite{milsarkExistentialSentencesEnglish1974}, ch. 1, ex. 12a-b)
+		\begin{xlist}
+			\ex[]  {There will be a duck roasted on Arbor Day.}
+			\ex[*] {There will be the duck roasted on Arbor Day.}
+		\end{xlist}}\label{ex:def}
+\end{exe}
+
+Finally, I have novel data concerning superlative Haddock readings with regards to TRCs: First, consider a classic Haddock context of multiple hats and multiple cats, but only one hat with any cats and only one cat in any hats; if indeed that one hatted-cat jumped out the window, (\ref{ex:haddock}) shows that TRCs may felicitously take Haddock readings.
+
+\begin{exe}
+	\ex {\textbf{Haddock TRC:} \\
+		The cat that there was in the hat jumped out the window.}\label{ex:haddock}
+\end{exe}
+
+Now, we expand our context with hats of various tall-ness and permit many cats across the hats, so long as there is only one tallest of the hats bearing any cats, and one cat in said hat (and indeed that that cat jumped out the window), then we see (\ref{ex:sup-haddock}) may take a (relative) superlative Haddock reading.
+
+\begin{exe}
+	\ex {\textbf{(Relative) Superlative Haddock:} \\
+		The cat that is in the tallest hat jumped out the window.}\label{ex:sup-haddock}
+\end{exe}
+
+However, we see that the analogous TRC (\ref{ex:trc-sup-haddock}) is infelicitous, permitting only an absolute reading in which there is a universally tallest hat.
+
+\begin{exe}
+	\ex[\#] {\textbf{TRCed Superlative Haddock:} \\
+		The cat that there was in the tallest hat jumped out the window.}\label{ex:trc-sup-haddock}
+\end{exe}
+
+The landscape is further muddied by the fact that apparently TRCs \textit{may} take superlative Haddocks in certain situations such as the modal context of (\ref{ex:de-dicto-sup-haddock}).
+
+\begin{exe}
+	\ex {\textbf{TRCed \textit{de dicto}\footnote{Jess: This is something I noticed just the other day. I don't really know what to call this empirically, it seems to have something to do with indices.} Superlative Haddock:} \\
+		I will adopt the cat that there is in the tallest hat.}\label{ex:de-dicto-sup-haddock}
+\end{exe}
+
+\subsection{Hypothesis}
+
+The present hypothesis is that the head determiner (item 1 in ex. \ref{ex:trc} above) `the' is split into a definite uniqueness check \(\mathbb{1}\) and indefinite introduction \(\bbexists\) following \citet{bumfordSplitscopeEffectsDefinite2017}. Importantly, the scope of \(\bbexists\) is trapped within the TRC, presumably by \textit{there}. The desired results of the data should be achievable then by further considering a dynamic semantics.
+
+\subsection{On Carlson's Restrictions}
+As a brief note, depending on individual judgements (\cite{heimWhereDoesDefiniteness1987}), TRCs seem to pattern with true amount relatives (i.e. of \cite{mendiaAmountRelativesRedux2017}) with respect to relativizer restrictions (\(\varnothing\), \textit{that}, never \textit{wh}-forms) and stacking facts (at most one amount relative/TRC). I ignore both of these as (i) they are particularly weak if ever applicable for my own dialect and (ii) I have independent reasons to believe they are more complex that given at face value: First, \citet{kayThatVsWhich} suggests that true amount relatives do not have this relativizer restriction. Second, to my knowledge, past research has not considered mixed stacking as in (\ref{ex:mixed}), particularly of amount, restrictive, and \textit{there} relative clauses in their many permutations. Third, in complex Haddock contexts like (\ref{ex:split})---such that there were several cats in the room and (later) in the kitchen, but only one (ever) in both (which of course jumped out the window)---stacking TRCs seems to be acceptable.
+
+\begin{exe}
+	\ex {It would take all day to feed the (number of) cats that there were on the island that the vet put down last year.}\label{ex:mixed}
+	\ex {The cat that there was in the hat that that there was later in the kitchen jumped out the window.}\label{ex:split}
+\end{exe}
+
+\section{Alternate Approaches}
+
+\subsection{Amount Relatives}
+
+TRCs have historically been analyzed as parallel to (true) amount relative clauses (ARCs) like (\ref{ex:arc}) (see \cite{carlsonAmountRelatives1977}; \cite{heimWhereDoesDefiniteness1987}; \cite{grosuStrangeRelativesThird1998}, \citeyear{grosuAmountRelatives2017}). Certainly, TRCs \textit{may} have amount readings as in (\ref{ex:a-trc}), which I call an A-TRC. It is important to not that these are \textit{not} the subject of the project. Where relevant entity-denoting TRCs may be called E-TRCs, though usually just TRCs.
+
+\begin{exe}
+	\ex {\textbf{Amount Relative Clause:} (\cite{heimWhereDoesDefiniteness1987}, ex. 40)\\
+		It will take us the rest of our lives to drink the champagne that they spilled that evening.}\label{ex:arc}
+	\ex {(Lisa Selkirk, p.c. to Irene Heim; so cited in \citet{vonfintelAmountRelativesMeaning1999}, original unknown) \\
+		There isn't the water in the sink that there is in the bathtub.}\label{ex:a-trc}
+\end{exe}
+
+The short (and possibly oversimplified) version largely developed by \citeauthor{grosuStrangeRelativesThird1998} (\citeyear{grosuStrangeRelativesThird1998}, \citeyear{grosuAmountRelatives2017}) (GL) is that the DE prohibits individual abstraction (Carlson/Heim; though see \cite{postalContrastingExtractionTypes1994}) but permits abstraction of individual-degree pairs.\footnote{Taking the relativizer restrictions as real, Heim suggests a degree vs. individual split of the relativizers. Of course, this is irrelevant should the phenomenon not hold; and, in fact, \citet{kayThatVsWhich}'s data suggests degree abstraction and ARCs do not care about the choice of relativizer.} Motivated partially by the fact that we indeed see maximalization---(\ref{ex:max}) requires there to have been exactly three books on the table and that I indeed took all of them---GL argue degrees obligatarily maximalize (cf. \cite{rullmannMaximalitySemanticsOfwhconstructions1995}). This yields a singleton\footnote{This also gives any stacking restrictions along the lines of \citet{schlenkerMinimizeRestrictorsNotes2005}'s \textit{Minimize Restrictors} condition. Though, of course, it also causes problems for the more complex stacking phenomenon suggested earlier.} over which only definite and (distributed) universal determiners may operate; existentials over singletons are (classically) logically equivalent to definites causing the operations to ``clash.''\footnote{It is not clear to me from \citet{grosuStrangeRelativesThird1998} why this should be infelicitous. GL apply a plurality/non-singleton presupposition to existentials to account for this.} Finally, note that GL assume (though do not identify) existential disclosure during individual-degree abstraction.
+
+\begin{exe}
+	\ex {I took the three books that there were on the table with me.}\label{ex:max}
+\end{exe}
+
+I take several issues with this: Most glaringly, GL require degrees to get what is otherwise a story entirely about individuals. This counterargument has previously been stated by \citet{mcnallyDPInternalOnlyAmount2008} (see \S\ref{sec:kinds}) and specifically rebutted in \citet{grosuEntitydenotingAmountRelatives2015}. There, \citeauthor{grosuEntitydenotingAmountRelatives2015} point out analogous data in Romanian which independently requires degrees yet still achieves a reading about individuals.\footnote{\citet{grosuSelectedAspectsAmount2015} develops the Romanian data further, I simply haven't had the time to read it yet.} To this, I point out that the analysis strongly depends on Romanian lexical items which are not available in English, namely a degree relativizer: e.g. translations of Romanian \textit{c\^a\c ti} or Spanish \textit{cuanto} require the English phrase \textit{how many}; \citet{mendiaAmountRelativesRedux2017} strongly argues that English does not have such a degree relativizer. Thus, while degree relativization may be able to yield individuals in Romanian (and perhaps Spanish), there is no \textit{a priori} reason to believe it may in English if English may not relativize degrees.\footnote{\citet{mendiaAmountRelativesRedux2017} further argues that English ARCs are in fact kinds, under a broad interpretation of `kind' as basically `equivalence class.'}
+
+Further, as noted above, GL already rely on the techniques of dynamic semantics. They assume existential disclosure in relativization. Moreso, their account of Carlson's observation of the unacceptability of certain strong determiners like \textit{most} appeals to a requirement to maintain the cardinality of MAX_A, the `maximal set determined by the antecedent of the anaphora' from \citet{kadmonUniqueNonuniqueReference1992}.
+
+\subsection{Kinds}\label{sec:kinds}
+\citet{mcnallyDPInternalOnlyAmount2008}, divorcing TRCs from ARCs, suggests TRCs relativize kinds (strictly, ``the entity correlate of a property'' following \cite{mcnallyInterpretationEnglishExistential1992}). \citet{mendiaAmountRelativesRedux2017} employs kinds/equivalence classes to great effect in ARCs.
+
+A necessarily kind-based analysis of TRCs falls victim to similar problems as amounts: Individual-kind pairs are no better than individual-degree pairs (indeed degrees may be analyzed as kinds) in that they introduce superfluous structure. Nominally, a strictly kind-based analysis is plausible wherein the equivalence relation is the identity function such that each individual has its own cell. \citet{grosuAmountRelatives2017} rebuke such a stance since ``we will have to allow for as many \textit{sub-kinds} of reasons, problems, etc. as there are reasons, problems, etc.'' (p. 48). While I'm not entirely sure what there issue there is, I will add on that it is not clear how such an analysis is functionally/empirically different from straight-forward invidual abstraction.
+
+\subsection{\citet{vonfintelAmountRelativesMeaning1999}}
+\citet{vonfintelAmountRelativesMeaning1999} suggests a number of alternatives: movement without chain formation and(?)\footnote{I am not sure if movement without chains and resumptive pronouns are meant to be considered as the same alternative or not.} covert resumptive pronouns\footnote{\citet{postalContrastingExtractionTypes1994} would be relevant here.} for which considerations of locality and control theory may be relevant\footnote{I have not had a chance to explore this/these alternatives.}; he also suggests, suspiciously close to the present suggestion, a matrix pronoun with the AR an independent assertion. \citet{grosuAmountRelatives2017} specifically rebutt this pronominal alternative, a rebuttal I simply do not find terribly convincing.
+
+\subsection{Interim Summary}
+
+In sum, the problems with alternative approaches by and large amount to superfluous structure and already appealing to discourse and dynamic semantics.
+
+\section{Planning}
+
+My highly tentative month-by-month plan for this project is as follows:
+\begin{itemize}
+	\item {November: First stab at writing an analysis based on what I have researched thus far and oncoming research}
+	\item {December: Continue research with focus on dynamic semantics (\cite{heimSemanticsDefiniteIndefinite1982}; \cite{groenendijkDynamicPredicateLogic1991}) and split scope (\cite{abelsUnifiedApproachSplit2010}; \cite{bumfordSplitscopeEffectsDefinite2017})}
+	\item {January: Formalizing analysis}
+	\item {February: Writing}
+	\item {Mid April: First (second?) draft for feedback}
+	\item {Early May: Revisions from feedback}
+	\item {Late May: Ready for submission}
+\end{itemize}
+
+\printbibliography
+\end{document}
