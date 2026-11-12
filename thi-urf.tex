@@ -1,0 +1,203 @@
+\documentclass[11pt]{article}
+% Discuss:
+% * writing sample
+% * letters of rec
+
+% THI URF:
+% * Description of research problem
+% * What will be done
+% * End product
+% * Timetable
+
+
+\usepackage{silence}
+\WarningFilter{biblatex}{Patching footnotes failed}
+\usepackage[
+style=authoryear,
+natbib
+]{biblatex}
+\addbibresource{bibliography.bib}
+
+\usepackage{graphicx}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{subcaption}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bbold}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage[linguistics]{forest}
+\usetikzlibrary{tikzmark}
+
+\usepackage[normalem]{ulem} % \sout strikethrough text
+
+\usepackage{gb4e}
+
+\newcommand{\ok}{\checkmark}
+\DeclareMathOperator{\bbexists}{\exists\mskip-7mu\exists}
+
+
+\title{Senior Thesis Proposal}
+\author{Benjamin Kyle Olson}
+\date{2026-11-07}
+
+\begin{document}
+\maketitle
+
+\section{URF}
+
+\begin{exe}
+    \ex {\textbf{Restrictive Relative Clauses:}
+    \begin{xlist}
+        \ex {}
+    \end{xlist}
+\end{exe}
+
+% Spell out complexity
+% Restrictive relative clause
+% * indefinite + definite
+
+
+
+\section{Introduction}
+
+\subsection{Data}
+
+This project is to explain relative clauses out of expletive \textit{there} contexts (TRCs) such as (\ref{ex:trc}). These are known to exhibit determiner selection (\ref{ex:det}): broadly, definites and universals are acceptable; indefinites are unacceptable. This is particularly striking against the well-known (anti)definiteness effect (DE) of expletive \textit{there} contexts (TCs) seen in (\ref{ex:def}).
+
+\begin{exe}
+    \ex {}
+	\ex {The cat that there was in the room jumped out the window.}\label{ex:trc}\footnote{\label{fn:intro}TRCs seem to be almost universally partially marked and informants consistently say that they would prefer the plain relative clauses without expletive \textit{there}. I think this partially has to do with the generally presentationality of TCs (e.g. \cite{zucchiIngredientsDefinitenessDefiniteness1995}). Part of the research phase of this project will include trying to find less marked examples, ideally even contexts where the TRC is required/better than the plain relative. One such variable seems to be tense: informants sometimes report varying acceptability depending on past vs. present tense; puzzling this seems to be ideolectical and unstable in the sense that the other tense is more available once you ``figure it out.''}
+	\ex {\textbf{Determiner Selection:} (\cite{carlsonAmountRelatives1977}, ex. 10a, 10e, 11b)
+		\begin{xlist}
+			\ex[]  {\textbf{The} people there were at that time only lived a few decades.}
+			\ex[]  {\textbf{Every} lion there is eats meat.}
+			\ex[*] {\textbf{A} man there was disagreed.}
+		\end{xlist}}\label{ex:det}
+	\ex {\textbf{Definiteness Effect:} (\cite{milsarkExistentialSentencesEnglish1974}, ch. 1, ex. 12a-b)
+		\begin{xlist}
+			\ex[]  {There will be a duck roasted on Arbor Day.}
+			\ex[*] {There will be the duck roasted on Arbor Day.}
+		\end{xlist}}\label{ex:def}
+\end{exe}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{.75\textwidth}
+		\begin{center}
+			\includegraphics[width=0.95\textwidth]{figures/haddock.png}
+		\end{center}
+		\caption{Haddock context}\label{fig:haddock}
+	\end{subfigure}%
+	%
+	\begin{subfigure}{.25\textwidth}
+		\begin{center}
+			\includegraphics[width=.95\textwidth]{figures/window-jumping.png}
+		\end{center}
+		\caption{Window jumping}%\label{fig:window-jumping}
+	\end{subfigure}
+	\caption{Haddock TRC (\ref{ex:haddock}) context}
+\end{figure}
+
+Finally, I have novel data concerning superlative Haddock readings with regards to TRCs: First, consider a classic Haddock context of multiple hats and multiple cats, but only one hat with any cats and only one cat in any hats as in Figure~\ref{fig:haddock}; if indeed that one hatted-cat jumped out the window, (\ref{ex:haddock}) shows that TRCs may felicitously take Haddock readings.
+
+% TODO: figure for each
+% TABLES!
+\begin{exe}
+	\ex {\textbf{Haddock TRC:} \\
+		The cat that there is in the hat jumps out the window.
+		\begin{xlist}
+			\ex {(\ok Absolute) There is a cat in the (unique) hat. The cat jumps out the window. Fig.~\ref{fig:haddock} is infelicitous.}
+			\ex {(\ok Haddock) There is a cat in a hat. The cat jumps out the window. Fig.~\ref{fig:haddock} is felicitous.\footnote{Note that a cat in the second hat would make this reading infelicitous as such would fail to satisfy uniqueness for the head determiner (i.e. item 1 in (\ref{ex:haddock})).}}
+		\end{xlist}}\label{ex:haddock}
+\end{exe}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\begin{center}
+			\includegraphics[width=0.95\textwidth]{figures/superlative-haddock.png}
+		\end{center}
+		\caption{Superlative Haddock context}\label{fig:superlative-haddock}
+	\end{subfigure}%
+	%
+	\begin{subfigure}{.25\textwidth}
+		\begin{center}
+			\includegraphics[width=.95\textwidth]{figures/window-jumping.png}
+		\end{center}
+		\caption{Window jumping}
+	\end{subfigure}
+	\caption{Superlative Haddock (\ref{ex:sup-haddock}, \ref{ex:trc-sup-haddock}) context}
+\end{figure}
+
+Now, we expand our context with hats of various tall-ness and permit many cats across the hats, so long as there is only one tallest of the hats bearing any cats, and one cat in said hat as in Figure~\ref{fig:superlative-haddock} (and indeed that that cat jumped out the window), then we see (\ref{ex:sup-haddock}) may take a (relative) superlative Haddock reading.
+
+\begin{exe}
+	\ex {\textbf{(Relative) Superlative Haddock:} \\
+		The cat that is in the tallest hat jumps out the window.
+		\begin{xlist}
+			\ex {(\ok Absolute) There is a cat in the (absolutely) tallest hat. The cat jumps out the window. Fig.~\ref{fig:superlative-haddock} is infelicitous.}
+			\ex {(\ok Haddock) There is a cat in the (relatively) tallest hat (with any cat(s) in it). The cat jumps out the window. Fig.~\ref{fig:superlative-haddock} is felicitous.\footnote{Note that removing the cat from the shortest hat substantially worsens (\ref{ex:sup-haddock}), presumably for something like \citet{schlenkerMinimizeRestrictorsNotes2005}'s \textit{Minimize Restrictors}: it is pragmatically odd to impose a superlative on a singleton.}}
+		\end{xlist}}\label{ex:sup-haddock}
+\end{exe}
+
+However, we see that the analogous TRC (\ref{ex:trc-sup-haddock}) is infelicitous, permitting only an absolute reading in which there is a universally tallest hat.
+
+\begin{exe}
+	\ex {\textbf{TRCed Superlative Haddock:} \\
+		The cat that there is in the tallest hat jumps out the window.\\
+		(\ok Absolute, * Haddock)}\label{ex:trc-sup-haddock}
+\end{exe}
+
+% TODO: Interim summary
+
+\subsection{Hypothesis}
+
+The present hypothesis is that the head determiner (item 1 in ex. \ref{ex:trc} above) `the' is split into a definite uniqueness check \(\mathbb{1}\) and indefinite introduction \(\bbexists\) following \citet{bumfordSplitscopeEffectsDefinite2017}. Importantly, the scope of \(\mathbb{1}\) may be trapped within the TRC, presumably by \textit{there}, such as when including superlative force. The desired results of the data should be achievable then by further considering a dynamic semantics. One potential syntactic configuration is given in Figure~\ref{fig:tree-rel-sup}.
+
+\begin{figure}
+	\makebox[\textwidth][c]{
+		\begin{forest}
+			[DP [D [the [\(\mathbb{1}_c\) ]]]
+			[NP [NP [cat,roof ]]
+			[CP [C [that ]]
+			[IP [DP [there [there,name=there] [\(\mathbb{1}_h\),name=spec IP [\(\mathbb{1}_h\) ] [tallest_h,name=tallest ]]]]
+			[I^\prime{} [I [{[+ pres]} ]]
+			[VP,name=VP
+			[VP [V [be ]]
+				[DP_e [D [\(\bbexists_c\) ]] [NP [cat,roof ]]]]
+			[{XP = PP} [P [in ]]
+				[DP [D [the [\sout{\(\mathbb{1}_h\)},name=low def [\(\mathbb{1}_h\) ] [tallest_h,name=low def sup ]]
+										[\(\bbexists_h\) ]]]
+						[NP [AdjP [\sout{tallest_h},name=low sup ]]
+								[NP [hat,roof ]]]]]]]]]]]
+			% \draw[->] (spec VP) to[out=west, in=south] (spec IP);
+			\draw[->] (low sup) to[out=south,in=east] (low def sup);
+			\node[below=of spec IP] (a) {};
+			\draw[->] (low def) to[out=west, in=south, looseness=1.5] (a);
+			\draw[->, color=red, thick] (there) to node[pos=0.65,rotate=45] {\(\boldsymbol{\times}\)} (tallest);
+		\end{forest}}
+	\caption{The cat that there is in the tallest hat\dots{} (\ref{ex:haddock})}\label{fig:tree-rel-sup}
+\end{figure}
+
+%\(\mathbb{1}_c > \bbexists_c > \mathbb{1}_h \circ S_h > \bbexists_h\)
+
+%\(\mathbb{1}_c > \mathbb{1}_h \circ S_h > \bbexists_c > \bbexists_h\)
+
+\section{Planning}
+
+My highly tentative month-by-month plan for this project is as follows:
+\begin{itemize}
+	\item {November: First stab at writing an analysis based on what I have researched thus far and oncoming research}
+	\item {December: Continue research with focus on dynamic semantics (\cite{heimSemanticsDefiniteIndefinite1982}; \cite{groenendijkDynamicPredicateLogic1991}) and split scope (\cite{abelsUnifiedApproachSplit2010}; \cite{bumfordSplitscopeEffectsDefinite2017})}
+	\item {January: Formalizing analysis}
+	\item {February: Writing}
+	\item {Mid April: First (second?) draft for feedback}
+	\item {Early May: Revisions from feedback}
+	\item {Late May: Ready for submission}
+\end{itemize}
+
+% \printbibliography
+\end{document}
