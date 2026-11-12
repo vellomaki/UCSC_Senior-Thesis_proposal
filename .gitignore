@@ -9,3 +9,5 @@
 *.pdf
 *.run.xml
 *.synctex.gz
+*.bbl-SAVE-ERROR
+*.bcf-SAVE-ERROR

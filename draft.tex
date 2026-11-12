@@ -9,8 +9,9 @@ natbib
 \addbibresource{bibliography.bib}
 
 \usepackage{graphicx}
-\usepackage{caption}
-\usepackage{subcaption}
+\usepackage{caption} % More complex captioning
+\usepackage{subcaption} % subfigure environment and co.
+\usepackage{placeins} % \FloatBarrier flushes the float buffer
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -38,7 +39,7 @@ natbib
 
 \section{Introduction}
 
-This project is to explain relative clauses out of expletive \textit{there} contexts (TRCs) such as (\ref{ex:trc}). These are known to exhibit determiner selection (\ref{ex:det}): broadly, definites and universals are acceptable; indefinites are unacceptable. This is particularly striking against the well-known (anti)definiteness effect (DE) of expletive \textit{there} contexts (TCs) seen in (\ref{ex:def}).
+This thesis is to explain relative clauses out of expletive \textit{there} contexts (TRCs) such as (\ref{ex:trc}). These are known to exhibit determiner selection (\ref{ex:det}): broadly, definites and universals are acceptable; indefinites are unacceptable. This is particularly striking against the well-known (anti)definiteness effect (DE) of expletive \textit{there} contexts (TCs) seen in (\ref{ex:def}).
 
 \begin{exe}
 	\ex {The cat that there was in the room jumped out the window.}\label{ex:trc}\footnote{\label{fn:intro}TRCs seem to be almost universally partially marked and informants consistently say that they would prefer the plain relative clauses without expletive \textit{there}. I think this partially has to do with the generally presentationality of TCs (e.g. \cite{zucchiIngredientsDefinitenessDefiniteness1995}). Part of the research phase of this project will include trying to find less marked examples, ideally even contexts where the TRC is required/better than the plain relative. One such variable seems to be tense: informants sometimes report varying acceptability depending on past vs. present tense; puzzling this seems to be ideolectical and unstable in the sense that the other tense is more available once you ``figure it out.''}
@@ -55,32 +56,63 @@ This project is to explain relative clauses out of expletive \textit{there} cont
 		\end{xlist}}\label{ex:def}
 \end{exe}
 
+These determiners seem to be just those that regularly allow dynamic reference. The marked continuations in (\ref{ex:dynamic-determiners}) seem distinctly odd, especially compared to their unmarked siblings.\footnote{Of course, the judgements here are noticably less sharp than the TRCs above; I have three resolutions to this snag: (i) It seems entirely reasonable to believe that determiner reference is, in a sense, looser with distinct sentences than with relative clauses. (ii) The determiner restrictions do not seem iron-clad: as \citet{grosuAmountRelatives2017} point out, certain indefinites sometimes permit some kind of partitive interpretation:
+	\begin{exe}
+		\ex {Some students that there were at the party left early, but the remainder stayed past midnight. \\ (\citet{grosuAmountRelatives2017} ex. 25a)}
+	\end{exe}
+	(iii) Finally, given the general weakness of TRC determiner restrictions, it would be good to run an acceptability experiment to see how strong these patterns really are.}
+
+\begin{exe}
+	\ex {\begin{xlist}
+			\ex {There is a cat in the hat.
+				\begin{xlist}
+					\ex[] {The cat jumps out the window.}
+					\ex[??] {A cat jumps out the window.}
+				\end{xlist}}
+			\ex {There are three cats in the hat.
+				\begin{xlist}
+					\ex[] {The three cats jump out the window.}
+					\ex[] {Every cat jumps out the window.}
+					\ex[??] {Three cats jumps out the window.}
+					\ex[??] {Most cats jumps out the window.}
+				\end{xlist}}
+		\end{xlist}}\label{ex:dynamic-determiners}
+\end{exe}
+
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}{.75\textwidth}
+	\begin{subfigure}{.42\textwidth}
+		\begin{center}
+			\includegraphics[width=0.95\textwidth]{figures/absolute.png}
+			\captionsetup{justification=centering,format=hang}
+			\caption{Absolute context, \\ exactly one hat}\label{fig:absolute}
+		\end{center}
+	\end{subfigure}\ %
+	%
+	\begin{subfigure}{.57\textwidth}
 		\begin{center}
 			\includegraphics[width=0.95\textwidth]{figures/haddock.png}
+			\caption{Haddock context, \\ several hats}\label{fig:haddock}
 		\end{center}
-		\caption{Haddock context}\label{fig:haddock}
-	\end{subfigure}%
-	%
+	\end{subfigure}
+
 	\begin{subfigure}{.25\textwidth}
 		\begin{center}
 			\includegraphics[width=.95\textwidth]{figures/window-jumping.png}
 		\end{center}
-		\caption{Window jumping}%\label{fig:window-jumping}
+		\caption{Window jumping}
 	\end{subfigure}
-	\caption{Haddock TRC (\ref{ex:haddock}) context}
+	\caption{(\ref{ex:haddock}) Contexts}
 \end{figure}
 
-Finally, I have novel data concerning superlative Haddock readings with regards to TRCs: First, consider a classic Haddock context of multiple hats and multiple cats, but only one hat with any cats and only one cat in any hats as in Figure~\ref{fig:haddock}; if indeed that one hatted-cat jumped out the window, (\ref{ex:haddock}) shows that TRCs may felicitously take Haddock readings.
+Finally, I have novel data concerning superlative Haddock readings with regards to TRCs: First, consider a classic Haddock context of multiple hats and multiple cats, but only one hat with any cats and only one cat in any hats as in Figure~\ref{fig:haddock}; if indeed that one hatted-cat jumped out the window, (\ref{ex:haddock}) shows that TRCs may felicitously take Haddock readings.\footnote{\ok marks indicate available readings, * marks indicate unavailable readings.}
 
 \begin{exe}
 	\ex {\textbf{Haddock TRC:} \\
 		The cat that there is in the hat jumps out the window.
 		\begin{xlist}
-			\ex {(\ok Absolute) There is a cat in the (unique) hat. The cat jumps out the window. Fig.~\ref{fig:haddock} is infelicitous.}
-			\ex {(\ok Haddock) There is a cat in a hat. The cat jumps out the window. Fig.~\ref{fig:haddock} is felicitous.\footnote{Note that a cat in the second hat would make this reading infelicitous as such would fail to satisfy uniqueness for the head determiner (i.e. item 1 in (\ref{ex:haddock})).}}
+			\ex {(\ok Absolute; Fig.~\ref{fig:absolute}) There is a cat in the (unique) hat. The cat jumps out the window.}
+			\ex {(\ok Haddock; Fig.~\ref{fig:haddock}) There is a cat in a hat. The cat jumps out the window.\footnote{Note that a cat in the second hat would make this reading infelicitous as such would fail to satisfy uniqueness for the head determiner (i.e. item 1 in ex. \ref{ex:haddock}). This is predicted by the definite determiner at the start of the second sentence in the paraphrase (\ref{ex:haddock-sem})}}\label{ex:haddock-sem}
 		\end{xlist}}\label{ex:haddock}
 \end{exe}
 
@@ -108,8 +140,8 @@ Now, we expand our context with hats of various tall-ness and permit many cats a
 	\ex {\textbf{(Relative) Superlative Haddock:} \\
 		The cat that is in the tallest hat jumps out the window.
 		\begin{xlist}
-			\ex {(\ok Absolute) There is a cat in the (absolutely) tallest hat. The cat jumps out the window. Fig.~\ref{fig:superlative-haddock} is infelicitous.}
-			\ex {(\ok Haddock) There is a cat in the (relatively) tallest hat (with any cat(s) in it). The cat jumps out the window. Fig.~\ref{fig:superlative-haddock} is felicitous.\footnote{Note that removing the cat from the shortest hat substantially worsens (\ref{ex:sup-haddock}), presumably for something like \citet{schlenkerMinimizeRestrictorsNotes2005}'s \textit{Minimize Restrictors}: it is pragmatically odd to impose a superlative on a singleton.}}
+			\ex {(\ok Absolute) There is a cat in the (absolutely) tallest hat. The cat jumps out the window.\footnote{Note that Fig.~\ref{fig:superlative-haddock} is infelicitous with an absolute reading like (\ref{ex:abs-sup-sem}) since the context does not, in fact, have a cat in the absolutely tallest hat.}}\label{ex:abs-sup-sem}
+			\ex {(\ok Haddock; Fig.~\ref{fig:superlative-haddock}) There is a cat in the (relatively) tallest hat with any cats in it. The cat jumps out the window.\footnote{Note that removing the cat from the shortest hat substantially worsens (\ref{ex:sup-haddock}), presumably for something like \citet{schlenkerMinimizeRestrictorsNotes2005}'s \textit{Minimize Restrictors}: it is pragmatically odd to impose a superlative on a singleton.}}
 		\end{xlist}}\label{ex:sup-haddock}
 \end{exe}
 
@@ -128,7 +160,8 @@ The landscape is further muddied by the fact that apparently TRCs \textit{may} t
 	\ex {\textbf{\textit{De dicto} TRCed Superlative Haddock:} \\
 		I will adopt the cat that there is in the tallest hat.
 		\begin{xlist}
-			\ex {(\textit{de re}) There is (now) a cat in the tallest hat. I will adopt the cat. Exactly as in (\ref{ex:trc-sup-haddock}): \ok absolute, * Haddock.}
+			\ex {(\textit{de re}) There is a cat in the tallest hat. I will adopt the cat. \\
+				(\ok Absolute, * Haddock; exactly as in ex. \ref{ex:trc-sup-haddock}).}
 			\ex {(\textit{de dicto}) There will be cats in hats of various tallness. In particular, there will be a cat the tallest hat. I will adopt the cat. (\ok Absolute, \ok Haddock.)}
 		\end{xlist}}\label{ex:de-dicto-sup-haddock}
 \end{exe}
@@ -139,19 +172,25 @@ This seems to be a product of intensions: given the context (\ref{ex:context:mod
 	\ex {\textbf{Modal TRCed Superlative Haddock:}\footnote{Adapted from a suggestion by Leon Cosgrove, p.c.}
 		\begin{xlist}
 			\ex {\textit{Context: A cruel veterinarian has, over the course of her 20-year career, engaged in the habit of placing infirm cats into a bunch of hats of varying heights. She has 5 hats, each of different height, but puts at most only 3 cats at any one time in one each. Those hats are evilly positioned adjacent to a window. Without fail, that cat positioned in the one hat tallest w.r.t. the other two would leap out of the hat and out the window. She has evilly recorded these events of cat autodefenestration, editted them together as a montage, and showed me this video.}}\label{ex:context:modal}
-			\ex {The cat that there was in the tallest hat would jump out the window.}\label{ex:modal}
-		\end{xlist}}
+			\ex {The cat that there was in the tallest hat would jump out the window. (\ok Absolute, \ok Haddock)}\label{ex:modal}
+		\end{xlist}}\label{ex:modal-trc}
 \end{exe}
 
-I will note that the difference between any acceptability does not seem to be a subject-object distinction, allodefenestration in (\ref{ex:allodefenestration}) is as unacceptable as autodefenestration in (\ref{ex:trc-sup-haddock}).
+I will note that the difference between any acceptability does not seem to be a subject-object distinction: allodefenestration from Haddock tallest hats in (\ref{ex:allodefenestration}) is as unacceptable as autodefenestration in (\ref{ex:trc-sup-haddock}).
 
 \begin{exe}
-	\ex {John threw the cat that there was in the tallest hat out the window.}\label{ex:allodefenestration}
+	\ex {John threw the cat that there was in the tallest hat out the window. \\
+		(\ok Absolute, * Haddock)}\label{ex:allodefenestration}
 \end{exe}
 
-\subsection{Hypothesis}
+\subsubsection{Interim Summary}
+To recapitulate the data just above: definites and universals determiners, but not indefinites, may generally co-occur with TRCs (\ref{ex:det}). These seem to be those determiners which regularly permit dynamic reference (\ref{ex:dynamic-determiners}). Separately, TRCs may take plain Haddock readings (\ref{ex:haddock}) but generally not superlative Haddocks (\ref{ex:sup-haddock}). Finally, TRCed superlative Haddocks \textit{are} available in modalized/possible-worlds contexts (\ref{ex:de-dicto-sup-haddock}-\ref{ex:modal-trc}).
 
-The present hypothesis is that the head determiner (item 1 in ex. \ref{ex:trc} above) `the' is split into a definite uniqueness check \(\mathbb{1}\) and indefinite introduction \(\bbexists\) following \citet{bumfordSplitscopeEffectsDefinite2017}. Importantly, the scope of \(\mathbb{1}\) may be trapped within the TRC, presumably by \textit{there}, such as when including superlative force. The desired results of the data should be achievable then by further considering a dynamic semantics. One potential syntactic configuration is given in Figure~\ref{fig:tree-rel-sup}.
+\subsection{Hypothesis}
+The present hypothesis proposes that both these effects---those determiner restrictions and superlative Haddocks---may be resolved by appealing to dynamic semantics. The head determiner selection is seen as just those determiners which regularly permit dynamic reference.
+
+Meanwhile, the determiner associated with the superlative---`the (tallest hat)'---is split into a definite uniqueness check \(\mathbb{1}\) and indefinite introduction \(\bbexists\) following \citet{bumfordSplitscopeEffectsDefinite2017}. In this way, Haddock readings are garnered by scoping/interleaving the definiteness of hats \(\mathbb{1}_h\) over the indefiniteness of cats \(\bbexists_c\): \(\mathbb{1}_c > \mathbb{1}_h > \bbexists_h > \bbexists_h\); absolute readings flip the central relation: \(\mathbb{1}_c > \bbexists_c > \mathbb{1}_h > \bbexists_h\).
+Importantly, the scope of \(\mathbb{1}\) may be trapped within the TRC, presumably by \textit{there}, such as when including superlative force. The desired results of the data should be achievable then by further considering a dynamic semantics. One potential syntactic configuration is given in Figure~\ref{fig:tree-rel-sup}.
 
 \begin{figure}
 	\makebox[\textwidth][c]{
